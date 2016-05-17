@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- bower:css -->
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+	<!-- endbower -->
+
+	<!-- bower:js -->
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="../bower_components/angular-recursion/angular-recursion.js"></script>
+	<script src="../bower_components/underscore/underscore.js"></script>
+	<!-- endbower -->
+
+
+
+	<script type="text/javascript" src="./bullet-model.js"></script>
+
+	<script type="text/javascript" src="./testBullets.js"></script>
+
+	<script src="./main.js"></script>
+	<title>Bullets - Yeaouch!</title>
+</head>
+<body ng-app="main" >
+	<div class="container-fluid">
+		<div ng-controller="bulletCtrl as bc">
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+					<bullet node="rootBullet"> </bullet>
+				</div>
+				<div class="col-sm-4"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

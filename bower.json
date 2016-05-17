@@ -1,0 +1,32 @@
+{
+  "name": "bullets",
+  "authors": [
+    "= <gwelkind@gmail.com>"
+  ],
+  "description": "Angular-based recursive lists",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "jquery": "^2.2.3",
+    "angular-recursion": "^1.0.5",
+    "underscore": "^1.8.3",
+    "bootstrap": "^3.3.6"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css"
+      ]
+    }
+  }
+}
