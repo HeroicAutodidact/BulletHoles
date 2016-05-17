@@ -24,6 +24,17 @@
 <body ng-app="main" >
 	<div class="container-fluid">
 		<div ng-controller="bulletCtrl as bc">
+
+			<!-- Breadcrumbs -->
+			<div class="row">
+				<div class="col-sm-12">
+					<ol class="breadcrumb">
+						<li ng-repeat="ancestor in getAncestry()">{{ancestor.content}}</li>
+					</ol>
+				</div>
+			</div>
+
+			<!-- List content -->
 			<div class="row">
 				<div class="col-sm-4"></div>
 				<div class="col-sm-4">
@@ -31,6 +42,7 @@
 				</div>
 				<div class="col-sm-4"></div>
 			</div>
+
 		</div>
 	</div>
 

@@ -9,6 +9,8 @@ new Bullet("Home",[
         new Bullet("child4",[])
     ])
 ]);
+
+daddy2 = testBulletRoot.children[1]
 //  {
 //     bContent: "Home",
 //     bChildren: [
