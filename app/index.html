@@ -28,18 +28,26 @@
 
 			<!-- Breadcrumbs -->
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
 					<ol class="breadcrumb">
 						<li ng-repeat="ancestor in getAncestry()">{{ancestor.content}}</li>
+						<li>{{currentBullet.content}}</li>
 					</ol>
 				</div>
 			</div>
+
+			<h2 class="text-center"> {{currentBullet.content}} </h2>
 
 			<!-- List content -->
 			<div class="row">
 				<div class="col-sm-4"></div>
 				<div class="col-sm-4">
-					<bullet node="rootBullet"> </bullet>
+					<ul class="list-group-sm" contentEditable="true">
+						<li class="list-group-item" ng-repeat="child in currentBullet.children">
+							<bullet node="child"> </bullet>
+						</li>
+					</ul>
 				</div>
 				<div class="col-sm-4"></div>
 			</div>
