@@ -3,10 +3,15 @@ Bullet = function(content,children){
 	this.parent = null;
 	this.content = content;
 	this.children = children;
+	this.expanded = true;
 	for(c in this.children){
 		child = this.children[c];
 		child.parent = this;
 	}
+}
+
+Bullet.prototype.toggleExpanded = function(){
+	this.expanded = !this.expanded;
 }
 
 Bullet.prototype.reparent = function(newParent,index){
